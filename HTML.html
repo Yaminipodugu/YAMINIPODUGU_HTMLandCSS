@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel = "stylesheet" href="signin.css">
+</head>
+<script>
+    function openGmail() {
+      window.open("https://www.gmail.com");
+    }
+    function openFac(){
+      window.open("https://www.facebook.com");
+    }
+    function opeEpam(){
+      window.open("https://www.epam.com");
+    }
+</script>
+<body>
+    <header>
+        <div class="main-header">
+            <div class = "head">
+                <img src = "OIP.jpg" alt="cap" id = "img" class = "img">
+                <button type = "button" id ="cnb" class = "cancelbtn">x</button>
+                <h2>sign in</h2>
+            </div>
+            <div class = "input-icons">
+                <i class="fa fa-envelope icon"> 
+                </i> 
+                <p><input type="text" class = "input-field" placeholder="mail@example.com" name = "uname" required></p>
+            </div>
+            <div class = "input-icons">
+                <i class="fa fa-lock icon"> 
+                </i> 
+                <p><input type="password" class = "input-field" placeholder="password" name = "pass" required></p>
+            </div>
+            <br>
+            <button type="submit" class = "btn">SIGN IN</button>
+            <div class = "logged">
+                <span class = "pwd"><a id = "col" href = "#">Forget your password?</a></span>
+                <span class = "register"><a id = "col" href = "#">Register!</a></span>
+            </div>
+            <div class="container-or" ::before>
+                <span class="label-text">OR</span>            
+            </div> 
+            <button type = "submit" onclick="openFac()" class = "fb">f</button>
+            <button type = "submit" onclick="openGmail()" class = "gm">G</button>
+            <button type = "submit" onclick="openEpam()" class = "epam">< EPAM LOGIN >  </EPAM></button>
+        </div>
+    </header>
+</body>
+</html>
